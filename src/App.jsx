@@ -5,6 +5,8 @@ import './App.css'
 import SimpleForm from './Components/SimpleForm/SimpleForm'
 import StatefulForm from './Components/StatefulForm/StatefulForm'
 import HookForm from './Components/HookForm/HookForm'
+import ReuseableForm from './Components/ReuseableForm/ReuseableForm'
+
 
 function App() {
   
@@ -17,6 +19,9 @@ function App() {
       <StatefulForm></StatefulForm>
       <h2>by HookForm</h2>
       <HookForm></HookForm>
+      <h2>by ReUseableForm</h2>
+      <ReuseableForm formTitle={'sign-up'}></ReuseableForm>
+      <ReuseableForm formTitle={'Profile Update'} submitBtnText='update'></ReuseableForm>
     </>
   )
 }
